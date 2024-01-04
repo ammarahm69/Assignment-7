@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Assingnment</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #75a2ff57, #bdfff5);
+        }
+
+
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            background-color: #ecfff5;
+            text-align: center;
+            font-family: math;
+            color: rgb(0, 0, 0);
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Table 1</h1>
+        <table border="1" width="40%">
+            <tr>
+                <td rowspan="4" align="center"><strong>Day</strong></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"> <strong>Seminar</strong></td>
+            </tr>
+
+            <!-- Yahn se sahi ha -->
+            <tr>
+                <td colspan="2" align="center"> <strong>Schedule</strong></td>
+                <td rowspan="2" align="center"> <strong>Topic</strong></td>
+            </tr>
+            <tr>
+                <td align="center"> <strong>Begin</strong></td>
+                <td align="center"> <strong>End</strong></td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td>8:00 a.m</td>
+                <td>5:00 a.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>12:00 a.m</td>
+                <td>3:00 a.m</td>
+                <td>Validity DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="1">Xpath</td>
+
+            </tr>
+            <tr>
+                <td>11:00 a.m</td>
+                <td>2:00 a.m</td>
+                <td rowspan="2">XSL Transformation</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m</td>
+                <td>2:00 a.m</td>
+
+
+            </tr>
+            <tr>
+                <td>Wedensday</td>
+                <td>8:00 a.m </td>
+                <td>12:00 a.m</td>
+                <td>XSL Transformation</td>
+
+            </tr>
+        </table>
+        <hr>
+        <!-- Table 2 STARTS -->
+        <h1>Table 2 (Nested Table)</h1>
+        <table border="1">
+            <tr>
+                <th>Main Table Header 1</th>
+                <th>Main Table Header 2</th>
+                <th>Main Table Header 3</th>
+                <th>Main Table Header 4</th>
+            </tr>
+            <tr>
+            <tr>
+                <td>Row 2 -Item 1</td>
+                <td>Row 2 -Item 2</td>
+                <td rowspan="2">Row 2 - Nested Table 1
+                    <!-- <td>Row 2 -Item 2</td> -->
+                    <table border="1">
+                        <tr>
+                            <td><strong>Row1 Header</strong></td>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Row2 Header1</strong></td>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Row3Header</strong></td>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                <td rowspan="2">Row 3 Item 3</td>
+                </td>
+            </tr>
+            <td>
+
+                <table border="1">
+                    <td colspan="2"> <strong>Row 3: Nested Table 2</strong></td>
+                    <tr>
+                        <td> <strong>Row Header 1</strong></td>
+                        <td>Item</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Row Header 2</strong></td>
+                        <td>Item</td>
+                    </tr>
+                </table>
+                <!-- End of Nested Table -->
+            </td>
+            <td>Row3 Item -2</td>
+
+            </tr>
+            <tr>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 2</td>
+                <td>Row 4 - Item 3 </td>
+                <td>Row 4 - Item 4 </td>
+            </tr>
+            <tr>
+                <td colspan="5">Row 5 - Last row of outer Table</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- TABLE 3 starts here  -->
+        <h1>Table 3</h1>
+        <table border="8" >
+            <tr>
+                <td colspan="6"><strong>Athletics Day Time Table</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Area</strong></td>
+                <td><strong>10:00am-11:00am</strong></td>
+                <td><strong>10:00am-12:00am</strong></td>
+                <td><strong>12:00pm-1:00pm</strong></td>
+                <td><strong>2:00pm-4:30pm</strong></td>
+                <td><strong>7:00pm-9:30pm</strong></td>
+            </tr>
+            <tr>
+                <td rowspan="2"> <strong>Track</strong></td>
+                <td>400m</td>               
+                <td>200m</td>               
+                <td rowspan="3"> <strong>Lunch</strong></td>
+                <td>800m</td>
+                <td>100m</td>
+
+            </tr>
+            <tr>
+                <td>Hurdles</td>
+                <td>1500m</td>
+                <td>Free</td>
+                <td>80m</td>
+            </tr>
+            <tr>
+                <td><strong>Feild</strong></td>
+                <td>Discus</td>
+                <td>Javelin</td>
+                <td>Shot put</td>
+                <td>Hammer Throw</td>
+            </tr>
+           
+            
+        </table>
+    <hr>
+
+   
+    </center>
+</body>
+
+</html>
